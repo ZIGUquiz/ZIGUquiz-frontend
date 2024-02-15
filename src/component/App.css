@@ -1,0 +1,335 @@
+.testlayout{
+  width: 100vw;
+  font-size: 14px;
+  display: flex;
+  justify-content:center;
+  background-color:white;
+  height: calc(var(--vh,1vh)*100);
+}
+
+.startPageLayout{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #FFFFEC;
+  width: 100%;
+  max-width:390px;
+  height:100%;
+  color: #413730;
+}
+
+.chatListLayout{
+  justify-content: center;
+}
+
+.startmainbox{
+  width: 390px;
+  height: 390px;
+  line-height: 20px;
+  text-align: center;
+  background: #597E52;
+}
+
+.mainbox{
+  width: 390px;
+  height: 390px;
+  line-height: 30px;
+  text-align: center;
+  background: #597E52;
+}
+
+.question{
+  display:flex;
+  justify-content: center;
+  width: 292px;
+  height: 94.93px;
+  background: #FFFFEC;
+  border-radius: 5px;
+  margin-top:25px;
+  margin-left:50px;
+}
+
+.memo{
+  display:flex;
+  color: black;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 250px;
+  overflow-y:scroll;
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.maintext{
+  margin-top: 50px;
+  max-width: 380px;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  font-family: 'Cafe24SsurroundAir';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+.startLogo div:nth-child(1){
+  background-color: #597E52;
+  color:#FFFFEC;
+  width:300px;
+  height:300px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.startButton{
+  box-sizing: border-box;
+  position:static;
+  width: 250px;
+  height: 50px;
+  background: #F1E4C3;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin:20px;
+}
+
+.questionLayout{
+  display:flex;
+  flex-direction: column;
+  background-color:#FFFFEC;
+  width:100%;
+  max-width: 390px;
+  height:100%;
+  overflow:hidden;
+}
+
+.testTitle{
+  display:flex;
+  flex-direction: row;
+  width:100%;
+  align-items: center;
+  padding:15px;
+  box-sizing: border-box;
+  font-weight: 700;
+}
+
+.testTitle div:nth-child(1){
+  display: flex;
+  flex:1;
+  flex-direction: row-reverse
+}
+
+.questionList{
+  flex-direction: column;
+  height:100%;
+  overflow:scroll;
+  scrollbar-width: none;
+  justify-content: right;
+}
+
+.questionList::-webkit-scrollbar{
+  display:none;
+}
+
+.questionItemLayout{
+  flex-direction: column;
+  align-items: center;
+  display:flex;
+  flex:1;
+  margin:10px 15px 5px 15px;
+}
+
+.answerItemLayout{
+  width: 390px;
+  background-color: none;
+}
+
+
+.aChatBox{
+  display: flex;
+  width: 100%;
+  color: black;
+  font-size:22px;
+  border-bottom: 1px solid white;
+  margin-bottom:25px;
+}
+
+.aChatBox div:nth-child(1){
+  display: flex;
+  flex:1;
+  padding:10px;
+  box-sizing: border-box;
+}
+
+.aChatBox div:nth-child(2){
+  padding:10px;
+}
+
+.answerBox{
+  width: 290px;
+  background-color: #FFFFEC;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #ededed;
+  border-radius: 5px;
+  color:black;
+  margin-bottom: 5px;
+  margin-top:10px;
+  margin-left:49px;
+  font-family: 'Cafe24Ssurround';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  
+}
+
+
+.logopic img{
+  position: relative;
+  width: 100.93px;
+  height: 100.45px;
+  left: -110.31px;
+  top: 20.77px;
+}
+
+.qlogopic img{
+  position: relative;
+  width: 100.93px;
+  height: 100.45px;
+  left: 20.31px;
+  top: 75.77px;
+}
+
+.buttonstart{
+  margin-top:10px;
+  font-family: 'Cafe24Ssurround';
+}
+
+.loginbutton{
+  position:absolute;
+  top:60px;
+  left:420px;
+  display:flex;
+  justify-content: flex-end;
+  width: 38px;
+  height: 17px;
+  font-family: 'NanumSquareOTF';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 17px;
+  text-align: center;
+  color: #000000;
+
+}
+
+.picture img{
+  position: relative;
+  width: 101px;
+  height: 101px;
+  left: -130.14px;
+  top: 13.01px;
+
+}
+
+.result1{
+  position: relative;
+  width: 224px;
+  height: 26px;
+  left: 140px;
+  top: -60px;
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.result2{
+  position: relative;
+  display: flex;
+  width: 250px;
+  height: 100px;
+  left: 72px;
+  top: 50px;
+
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.aboutpro{
+position: relative;
+width: 140px;
+height: 20px;
+left: 0px;
+top: 0px;
+
+font-family: 'Cafe24 Ssurround';
+font-style: normal;
+font-weight: 700;
+font-size: 15px;
+line-height: 20px;
+text-align: center;
+color: #000000;
+
+}
+
+.share{
+  position: relative;
+  width: 61.4px;
+  height: 64.41px;
+  left: -30.07px;
+  top: 30px;
+}
+
+.rank{
+  position: relative;
+  width: 61.4px;
+  height: 64.41px;
+  left: 40px;
+  top: -34px;
+}
+
+.loginbttn{
+  position: relative;
+  top: 60px;
+  right: -360px;
+  color: #333;
+}
+
+
+.loginimg{
+  position:relative;
+  top:100px;
+  left:5px;
+}
+
+.ending{
+  position:relative;
+  left:6px;
+  font-size: 15px;
+  line-height:28px;
+}
