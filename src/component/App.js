@@ -36,6 +36,7 @@ function App() {
   const handleCkAnswer = (type, idx) => {
     let ls = [...testList]; // testList 복사하여 새 배열 생성 sssss
     for (let i = 0; i < ls.length; i++) {
+      console.log("now index" + i);
       if (ls[i].name === type) {
         ls[i].count = ls[i].count + 1;
       }
