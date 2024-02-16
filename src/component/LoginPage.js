@@ -8,15 +8,15 @@ import { GoogleOAuthProvider } from "@react-oauth/google";
 
 const GoogleLoginButton = () => {
     const signIn = useGoogleLogin({
-        onSuccess: (res) => {
-
-            axios.post('http://35.208.142.216:8080/auth/login', {
+        onSuccess: (res) => { 
+            axios.post('http://35.208.142.216/auth/login', {
                 access_token: res.access_token,
                 scope: res.scope
             })
             .then(response => {
                 Cookies.set('accessToken', response.data);
                 console.log('응답 데이터: ', response.data);
+                window.location.reload();
             })
             .catch(error => {
                 console.log('에러 발생: ', error);
