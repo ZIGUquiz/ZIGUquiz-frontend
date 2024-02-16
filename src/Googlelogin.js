@@ -13,7 +13,7 @@ const Googlelogin = () => {
                     onSuccess={(res) => {
                         Cookies.set('accessToken',res.credential);
 
-                    axios.post('35.208.142.216:8080/login',{
+                    axios.post('http://35.208.142.216:8080/auth/login',{
                         token: res.credential
                         })
                         .then(response =>{
