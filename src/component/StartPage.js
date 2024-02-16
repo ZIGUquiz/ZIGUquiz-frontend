@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import main from './img/main.png';
 import Navbar from './Navbar';
 import Sharerank from './Sharerank';
-import LoginPage from './LoginPage'; // 로그인 페이지 컴포넌트를 import 해주세요
+import LoginPage from './LoginPage.js';
 
 const StartPage = ({ setPage }) => {
     const [showLoginPage, setShowLoginPage] = useState(false); // 로그인 페이지를 보여줄지 여부를 상태로 관리합니다
