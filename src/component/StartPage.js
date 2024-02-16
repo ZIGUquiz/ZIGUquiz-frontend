@@ -26,6 +26,7 @@ const StartPage = ({ setPage }) => {
     }, []);
 
     const handleLoginLogoutClick = () => {
+        //로그아웃 처리
         if (isLoggedIn) {
             // document.cookie = 'accessToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
             Cookies.remove('accessToken',{path : ''})
