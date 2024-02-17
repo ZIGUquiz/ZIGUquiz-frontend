@@ -1,32 +1,51 @@
 import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
+import axios from 'axios';
 import Sharerank2 from './Sharerank2';
 
 const Rankpage = ({ setPage }) => {
-    const [counting, setCounting] = useState(null); // 참여 인원수
+
+    const [rankings, setRankings] = useState([]); // 국가별 순위 정보를 저장할 배열
 
     useEffect(() => {
-        fetch('백엔드 서버의 URL') // 백엔드 서버에 요청을 보냅니다
-            .then(response => response.json())
-            .then(data => setCounting(data.count)) // 받아온 데이터를 상태에 저장합니다
-            .catch(error => console.error(error)); // 에러가 발생하면 콘솔에 에러를 출력합니다
+
+        axios.get('http://35.208.142.216:8080/quiz/rank')
+            .then(response => {
+                // API 응답에서 국가별 정보를 배열로 변환
+                console.log(response.data);
+                const rankArray = Object.entries(response.data).map(([countryName, count], index) => ({
+                    countryName,
+                    count,
+                    rank: index + 1
+                }));
+                setRankings(rankArray);
+            })
+            .catch(error => console.error(error));
+
     }, []);
+
+
+{/* <img src="https://flagcdn.com/48x36/za.png"></img> */}
+// =>  /사이즈/국가코드(소문자).png
+
 
     return (
         <div className='startPageLayout'>
             <Navbar/>
             <div className='startmainbox'>
                 <div className='maintext'>
-                    <div className='first'>1 {counting} people participate</div>
-                    <div className='second'>2 {counting} people participate</div>
-                    <div className='third'>3 {counting} people participate</div>
+                    {rankings.map(({ countryName, count, rank }) => (
+                        <div key={countryName} className={`rank-${rank}`}>
+                            <img src={`https://flagcdn.com/48x36/${countryName.toLowerCase()}.png`} alt={countryName} />
+                            <span>{rank} {count} people participate</span>
+                        </div>
+                    ))}
                     <div className='line'></div>
                 </div>
                 <div onClick={() => window.location.reload()} className='againButton'>
                     <div className='buttonstart'>TEST AGAIN!</div> 
                 </div>
                 <Sharerank2/>
-                
             </div>
         </div>
     );
