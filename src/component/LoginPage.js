@@ -17,7 +17,7 @@ const GoogleLoginButton = () => {
                 scope: res.scope
             })
             .then(response => {
-                Cookies.set('accessToken', response.data);
+                Cookies.set('accessToken', response.data.token);
                 console.log('응답 데이터: ', response.data);
                 if(response.data.newMember == true){
                     // 이러면 나라 선택해야 함!!!
