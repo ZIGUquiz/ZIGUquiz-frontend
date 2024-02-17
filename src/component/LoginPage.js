@@ -18,9 +18,11 @@ const GoogleLoginButton = () => {
             })
             .then(response => {
                 Cookies.set('accessToken', response.data.token);
-                console.log('응답 데이터: ', response.data);
                 if(response.data.newMember == true){
                     // 이러면 나라 선택해야 함!!!
+                    console.log('새로운 회원 국적 정보 입력 필수 ');
+                } else {
+                window.location.reload();
                 }
             })
             .catch(error => {
@@ -28,7 +30,7 @@ const GoogleLoginButton = () => {
             });
         },
         //로그인 실패
-        onError: error => console.log(error),
+        onError: (error) =>{ console.log(error);}
     });
 
     return (
