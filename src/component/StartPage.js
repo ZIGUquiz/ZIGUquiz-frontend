@@ -20,7 +20,7 @@ const StartPage = ({ setPage }) => {
                     <div className='loginbttn' onClick={handleLoginClick}>
                         Login
                     </div>
-                    <div className='startPageLayout'>
+                    <div className='startPageLayout'style={{ position: 'absolute' }}>
                         <Navbar/>
                         <div className='startmainbox'>
                             <div className='maintext'>
