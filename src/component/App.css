@@ -105,6 +105,24 @@
   margin:20px;
 }
 
+.againButton{
+  box-sizing: border-box;
+  position:relative;
+  top:-20px;
+  left:50px;
+  width: 250px;
+  height: 50px;
+  background: #F1E4C3;
+  border: 1.5px solid #000000;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  margin:20px;
+}
+
 .questionLayout{
   display:flex;
   flex-direction: column;
@@ -281,19 +299,19 @@
 }
 
 .aboutpro{
-position: relative;
-width: 140px;
-height: 20px;
-left: 0px;
-top: 0px;
+  position: relative;
+  width: 140px;
+  height: 20px;
+  left: 0px;
+  top: 0px;
 
-font-family: 'Cafe24 Ssurround';
-font-style: normal;
-font-weight: 700;
-font-size: 15px;
-line-height: 20px;
-text-align: center;
-color: #000000;
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
 
 }
 
@@ -332,4 +350,114 @@ color: #000000;
   left:6px;
   font-size: 15px;
   line-height:28px;
+}
+
+.selectbox{
+  position: absolute;
+  width: 124.94px;
+  height: 25.53px;
+  left: 133.03px;
+  top: 250px;
+}
+
+.option{
+  position: absolute;
+  width: 45px;
+  height: 18px;
+  left: 141.36px;
+  top: 331.16px;
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+
+}
+
+.choose{
+  position: absolute;
+  width: 200px;
+  height: 18px;
+  left: 95px;
+  top: 210.32px;
+
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.submit{
+  position: absolute;
+  width: 150px;
+  height: 20px;
+  left: 121px;
+  top: 300.32px;
+
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #FFFFEC;
+  border-radius: 5px;
+  border-color:#000000;
+  
+  color: black;
+}
+
+
+.first{
+  position:relative;
+  top:50px;
+  left:30px;
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  border-color:#000000;
+}
+
+.second{
+  position:relative;
+  top:100px;
+  left:30px;
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  border-color:#000000;
+}
+
+.third{
+  position:relative;
+  top:150px;
+  left:30px;
+  font-family: 'Cafe24 Ssurround';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  border-color:#000000;
+}
+
+.line {
+  position:relative;
+  border-color: white;
+  top:-68px;
+  left:-100px;
+  border-left :  medium solid white;
+  height : 300px;
 }
