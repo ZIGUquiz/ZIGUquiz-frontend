@@ -1,14 +1,12 @@
-// import { useState, useEffect, useRef } from 'react';
 import './App.css';
-// import questionList from './questionList';
 import StartPage from './StartPage';
-// import QuestionLayout from './QuestionLayout';
-// import ResultPage from './ResultPage';
 import Country from './Country';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Main from './Main';
 import LoginPage from './LoginPage';
 import QuestionLayout from './QuestionLayout';
+import Rankpage from './Rankpage';
+import Sharerank from './Sharerank';
 
 
 function App() {
@@ -35,6 +33,9 @@ function App() {
             }/>
             <Route path="/questionlayout" element={
               <QuestionLayout></QuestionLayout>
+            }/>
+            <Route path="/rankpage" element={
+              <Rankpage></Rankpage>
             }/>
           </Routes>
           
