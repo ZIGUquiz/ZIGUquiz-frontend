@@ -47,7 +47,7 @@ const StartPage = ({ setPage }) => {
                     <div className='loginbttn' onClick={handleLoginLogoutClick}>
                         {isLoggedIn ? 'Logout' : 'Login'}
                     </div>
-                    <div className='startPageLayout'>
+                    <div className='startPageLayout'style={{ position: 'absolute' }}>
                         <Navbar/>
                         <div className='startmainbox'>
                             <div className='maintext'>
