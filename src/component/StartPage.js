@@ -5,8 +5,11 @@ import main from './img/main.png';
 import Navbar from './Navbar';
 import Sharerank from './Sharerank';
 import LoginPage from './LoginPage.js';
+import { useNavigate } from 'react-router-dom';
 
 const StartPage = ({ setPage }) => {
+    const navigate = useNavigate();
+
     const [showLoginPage, setShowLoginPage] = useState(false);
     const [userName, setUserName] = useState('');
     const [isLoggedIn, setIsLoggedIn] = useState(false);
@@ -28,21 +31,22 @@ const StartPage = ({ setPage }) => {
 
     const handleLoginLogoutClick = () => {
         //로그아웃 처리
-        if (isLoggedIn) {
+        if (isLoggedIn) { // 로그인 상태에서 로그아웃 과정
             // document.cookie = 'accessToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;';
             Cookies.remove('accessToken',{path : ''})
             setIsLoggedIn(false);
             setUserName('');
             // Optionally, redirect to homepage or refresh the page
-        } else {
+        } else { //로그아웃 상태에서 로그인 과정
             setShowLoginPage(true);
+            navigate("/main");
         }
     };
 
     return (
         <>
             {showLoginPage ? (
-                <LoginPage />
+                navigate("/loginpage")
             ) : (
                 <>
                     <div className='loginbttn' onClick={handleLoginLogoutClick}>
@@ -64,10 +68,14 @@ const StartPage = ({ setPage }) => {
                                 <img src={main} width='250px'/>
                             </div>
                         </div>
-                        <div onClick={() => setPage(1)} className='startButton'>
+                        <div onClick={() => {setPage(1);
+                        if(!Cookies.get('accessToken')){
+                            navigate('/loginpage');
+                        }
+                        }} className='startButton'>
                             <div className='buttonstart'>TEST START!</div>
                         </div>
-                        <Sharerank/>
+                        <Sharerank />
                     </div>
                 </>
             )}

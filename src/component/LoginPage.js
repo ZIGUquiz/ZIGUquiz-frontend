@@ -20,12 +20,14 @@ const GoogleLoginButton = () => {
             })
             .then(response => {
                 Cookies.set('accessToken', response.data.token);
+                console.log(response.data);
                 if(response.data.newMember == true){
                     // 이러면 나라 선택해야 함!!!
                     navigate("/country");
                     console.log('새로운 회원 국적 정보 입력 필수 ');
                 } else {
-                window.location.reload();
+                    navigate("/main");
+                    window.location.reload();
                 }
             })
             .catch(error => {
