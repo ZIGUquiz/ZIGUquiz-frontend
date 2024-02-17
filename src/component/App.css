@@ -355,10 +355,10 @@
 
 .selectbox{
   position: absolute;
-  width: 124.94px;
+  width: 230.94px;
   height: 25.53px;
-  left: 133.03px;
-  top: 250px;
+  left: 80px;
+  top: 100px;
 }
 
 .option{
@@ -399,7 +399,7 @@
   width: 150px;
   height: 20px;
   left: 121px;
-  top: 300.32px;
+  top: 320.32px;
 
   font-family: 'Cafe24 Ssurround';
   font-style: normal;
