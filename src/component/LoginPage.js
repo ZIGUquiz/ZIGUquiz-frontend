@@ -6,8 +6,10 @@ import Cookies from "js-cookie";
 import axios from 'axios';
 import { useGoogleLogin } from '@react-oauth/google';
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import { useNavigate } from 'react-router-dom';
 
 const GoogleLoginButton = () => {
+    const navigate = useNavigate();
     const signIn = useGoogleLogin({
         //로그인 성공
         onSuccess: (res) => { 
@@ -20,6 +22,7 @@ const GoogleLoginButton = () => {
                 Cookies.set('accessToken', response.data.token);
                 if(response.data.newMember == true){
                     // 이러면 나라 선택해야 함!!!
+                    navigate("/country");
                     console.log('새로운 회원 국적 정보 입력 필수 ');
                 } else {
                 window.location.reload();

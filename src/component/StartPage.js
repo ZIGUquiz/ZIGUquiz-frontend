@@ -21,6 +21,7 @@ const StartPage = ({ setPage }) => {
                 setIsLoggedIn(true);
             } catch (error) {
                 console.log('Invalid access token');
+                Cookies.remove('accessToken');
             }
         }
     }, []);
