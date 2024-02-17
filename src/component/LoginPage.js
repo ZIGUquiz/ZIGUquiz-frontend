@@ -27,7 +27,7 @@ const GoogleLoginButton = () => {
                     console.log('새로운 회원 국적 정보 입력 필수 ');
                 } else {
                     navigate("/main");
-                    window.location.reload();
+                    // window.location.reload();
                 }
             })
             .catch(error => {

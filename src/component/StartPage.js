@@ -39,7 +39,7 @@ const StartPage = ({ setPage }) => {
             // Optionally, redirect to homepage or refresh the page
         } else { //로그아웃 상태에서 로그인 과정
             setShowLoginPage(true);
-            navigate("/main");
+            // navigate("/main");
         }
     };
 
