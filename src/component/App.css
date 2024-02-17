@@ -331,11 +331,12 @@
   top: -34px;
 }
 
-.loginbttn{
+.loginbttn {
   position: relative;
   top: 60px;
-  right: -360px;
+  right: -150px;
   color: #333;
+  z-index: 1; 
 }
 
 
