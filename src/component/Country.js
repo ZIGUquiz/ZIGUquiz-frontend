@@ -26,19 +26,17 @@ const Country = ({ setPage }) => {
     };
 
     const handleSubmit = () => {
-        // // @@@@@@배포 전에 주석 해제 필수 @@@@@@@@@@@@@
-        // if (Cookies.get('accessToken') && selectedCountry) {
-        //     axios.post('http://localhost:8080/user/set-country', {
-        //         nationality: selectedCountry.value.toLowerCase()
-        //     }, { withCredentials: true })
-        //     .then(response => {
-        //         console.log(response.data);
-        //         navigate("/main");
-        //     })
-        //     .catch(error => {
-        //         console.error('There was an error!', error);
-        //     });
-        // }
+        if (Cookies.get('accessToken') && selectedCountry) {
+            axios.post('http://35.208.142.216:8080/user/set-country', {
+                nationality: selectedCountry.value.toLowerCase()
+            }, { withCredentials: true })
+            .then(response => {
+                navigate("/main");
+            })
+            .catch(error => {
+                console.error('There was an error!', error);
+            });
+        }
     };
 
     return (
