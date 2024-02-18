@@ -34,12 +34,14 @@ const Rankpage = ({ setPage }) => {
             <Navbar/>
             <div className='startmainbox'>
                 <div className='maintext'>
+                    <div className='ranking'>
                     {rankings.map(({ countryName, count, rank }) => (
                         <div key={countryName} className={`rank-${rank}`}>
-                            <img src={`https://flagcdn.com/48x36/${countryName.toLowerCase()}.png`} alt={countryName} />
-                            <span>{rank} {count} people participate</span>
+                            <img className='countryimg' src={`https://flagcdn.com/48x36/${countryName.toLowerCase()}.png`} alt={countryName} />
+                            <span>{rank}. {count} people participate</span>
                         </div>
                     ))}
+                    </div>
                     <div className='line'></div>
                 </div>
                 <div onClick={() => window.location.reload()} className='againButton'>

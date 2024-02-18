@@ -1,5 +1,6 @@
+
 .testlayout{
-  width: 100vw;
+  width: 100%;
   font-size: 14px;
   display: flex;
   justify-content:center;
@@ -8,13 +9,14 @@
 }
 
 .startPageLayout{
+  position:relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
   background-color: #FFFFEC;
-  width: 150%;
-  height:150%;
+  width: 100%;
+  height:1000px;
   color: #413730;
 }
 
@@ -31,7 +33,7 @@
 }
 
 .mainbox{
-  width:max-content;
+  width:390px;
   height: 390px;
   line-height: 30px;
   text-align: center;
@@ -64,12 +66,12 @@
 
 .maintext{
   margin-top: 50px;
-  max-width: 380px;
+  max-width: 100%;
   display:flex;
   flex-direction: column;
   align-items:center;
   color: white;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   font-family: 'Cafe24SsurroundAir';
   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
@@ -347,7 +349,7 @@
 
 .ending{
   position:relative;
-  left:6px;
+  width:390px;
   font-size: 15px;
   line-height:28px;
 }
@@ -377,11 +379,10 @@
 }
 
 .choose{
-  position: absolute;
+  position: relative;
   width: 200px;
   height: 18px;
-  left: 95px;
-  top: 210.32px;
+  top: 70px;
 
   font-family: 'Cafe24 Ssurround';
   font-style: normal;
@@ -394,11 +395,11 @@
 }
 
 .submit{
-  position: absolute;
+  position: relative;
   width: 150px;
   height: 20px;
-  left: 121px;
-  top: 320.32px;
+  left: 120px;
+  top: 140px;
 
   font-family: 'Cafe24 Ssurround';
   font-style: normal;
@@ -414,51 +415,28 @@
 }
 
 
-.first{
-  position:relative;
-  top:50px;
-  left:30px;
-  font-family: 'Cafe24 Ssurround';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: center;
-  border-color:#000000;
-}
-
-.second{
-  position:relative;
-  top:100px;
-  left:30px;
-  font-family: 'Cafe24 Ssurround';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: center;
-  border-color:#000000;
-}
-
-.third{
-  position:relative;
-  top:150px;
-  left:30px;
-  font-family: 'Cafe24 Ssurround';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  text-align: center;
-  border-color:#000000;
+.ranking{
+  position: relative;
+  top:80px;
 }
 
 .line {
   position:relative;
   border-color: white;
-  top:-68px;
+  top:-88px;
   left:-100px;
   border-left :  medium solid white;
   height : 300px;
 }
 
+.countryimg{
+  position:relative;
+  left:-60px;
+  top:10px;
+}
+
+@media only screen and (max-width: 320px) {
+  .startPageLayout {
+    overflow-x: scroll;  /* 가로 스크롤 추가 */
+  }
+}

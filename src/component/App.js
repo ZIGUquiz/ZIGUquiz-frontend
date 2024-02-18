@@ -1,4 +1,5 @@
 import './App.css';
+import './index.css';
 import StartPage from './StartPage';
 import Country from './Country';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
