@@ -5,6 +5,8 @@ import StartPage from './StartPage';
 import QuestionLayout from './QuestionLayout';
 import ResultPage from './ResultPage';
 import Country from './Country';
+import Cookies from "js-cookie";
+import axios from 'axios';
 
 function Main() {
   const setVh = () => {
