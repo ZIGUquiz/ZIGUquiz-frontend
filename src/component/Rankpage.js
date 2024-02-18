@@ -2,8 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Navbar from './Navbar';
 import axios from 'axios';
 import Sharerank2 from './Sharerank2';
+import { useNavigate } from 'react-router-dom';
 
 const Rankpage = ({ setPage }) => {
+    const navigate = useNavigate();
 
     const [rankings, setRankings] = useState([]); // 국가별 순위 정보를 저장할 배열
 
@@ -42,8 +44,8 @@ const Rankpage = ({ setPage }) => {
                     ))}
                     <div className='line'></div>
                 </div>
-                <div onClick={() => window.location.reload()} className='againButton'>
-                    <div className='buttonstart'>TEST AGAIN!</div> 
+                <div onClick={() => navigate("/")} className='againButton'>
+                    <div className='buttonstart'>Go To Main</div> 
                 </div>
                 <Sharerank2/>
             </div>
