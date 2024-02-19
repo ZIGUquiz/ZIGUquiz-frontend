@@ -6,7 +6,6 @@ import awkward from './img/awkward.png';
 import sick from './img/sick.png';
 import Sharerank from './Sharerank';
 import Project from './Project';
-import { Link } from 'react-router-dom';
 
 function setTest(correctCount) {
   let mc = [

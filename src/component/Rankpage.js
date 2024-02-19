@@ -25,11 +25,6 @@ const Rankpage = ({ setPage }) => {
 
     }, []);
 
-
-{/* <img src="https://flagcdn.com/48x36/za.png"></img> */}
-// =>  /사이즈/국가코드(소문자).png
-
-
     return (
         <div className='startPageLayout'>
             <Navbar/>

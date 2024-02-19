@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from './Navbar';
-import Country from './Country';
 import google from './img/google.png';
 import Cookies from "js-cookie";
 import axios from 'axios';
@@ -12,7 +11,7 @@ const GoogleLoginButton = () => {
     const navigate = useNavigate();
     const signIn = useGoogleLogin({
         //로그인 성공
-        onSuccess: (res) => { 
+        onSuccess: (res) => {
             axios.post('http://35.208.142.216:8080/auth/login', {
             // axios.post('http://localhost:8080/auth/login', {
                 access_token: res.access_token,
@@ -21,7 +20,7 @@ const GoogleLoginButton = () => {
             .then(response => {
                 Cookies.set('accessToken', response.data.token);
                 console.log(response.data);
-                if(response.data.newMember == true){
+                if(response.data.newMember === true){
                     // 이러면 나라 선택해야 함!!!
                     navigate("/country");
                     console.log('새로운 회원 국적 정보 입력 필수 ');

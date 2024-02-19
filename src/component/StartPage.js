@@ -4,7 +4,6 @@ import Cookies from 'js-cookie'
 import main from './img/main.png';
 import Navbar from './Navbar';
 import Sharerank from './Sharerank';
-import LoginPage from './LoginPage.js';
 import { useNavigate } from 'react-router-dom';
 
 const StartPage = ({ setPage }) => {

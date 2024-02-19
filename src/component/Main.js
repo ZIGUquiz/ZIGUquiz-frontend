@@ -1,10 +1,9 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import questionList from './questionList';
 import StartPage from './StartPage';
 import QuestionLayout from './QuestionLayout';
 import ResultPage from './ResultPage';
-import Country from './Country';
 import Cookies from "js-cookie";
 import axios from 'axios';
 
@@ -56,6 +55,9 @@ function Main() {
           .then(response => {
             console.log(response.data);
           })
+          .catch(error => {
+            console.error('error to send quiz result!', error);
+        });
       }
     }
   };

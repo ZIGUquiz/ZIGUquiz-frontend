@@ -35,6 +35,8 @@ const Country = ({ setPage }) => {
             })
             .catch(error => {
                 console.error('There was an error!', error);
+                alert("sorry failed to register nationality");
+                navigate("/main");
             });
         }
     };

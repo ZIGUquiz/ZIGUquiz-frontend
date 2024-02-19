@@ -7,7 +7,6 @@ import Main from './Main';
 import LoginPage from './LoginPage';
 import QuestionLayout from './QuestionLayout';
 import Rankpage from './Rankpage';
-import Sharerank from './Sharerank';
 
 
 function App() {
