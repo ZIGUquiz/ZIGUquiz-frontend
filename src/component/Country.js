@@ -27,7 +27,7 @@ const Country = ({ setPage }) => {
 
     const handleSubmit = () => {
         if (Cookies.get('accessToken') && selectedCountry) {
-            axios.post('http://35.208.142.216:8080/user/set-country', {
+            axios.post('/api/user/set-country', {
                 nationality: selectedCountry.value.toLowerCase()
             }, { withCredentials: true })
             .then(response => {

@@ -11,7 +11,7 @@ const Rankpage = ({ setPage }) => {
 
     useEffect(() => {
 
-        axios.get('http://35.208.142.216:8080/quiz/rank')
+        axios.get('/api/quiz/rank')
             .then(response => {
                 // API 응답에서 국가별 정보를 배열로 변환
                 const rankArray = Object.entries(response.data).map(([countryName, count], index) => ({

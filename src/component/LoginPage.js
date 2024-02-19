@@ -12,8 +12,7 @@ const GoogleLoginButton = () => {
     const signIn = useGoogleLogin({
         //로그인 성공
         onSuccess: (res) => {
-            axios.post('http://35.208.142.216:8080/auth/login', {
-            // axios.post('http://localhost:8080/auth/login', {
+            axios.post('/api/auth/login', {
                 access_token: res.access_token,
                 scope: res.scope
             })

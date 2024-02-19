@@ -47,7 +47,7 @@ function Main() {
 
     if (idx + 1 === questionList.length) {
       if (Cookies.get('accessToken')) {
-        axios.patch('http://35.208.142.216:8080/quiz/update-rank', {  //맞춘 정답 전송(유저 쿠키 생성 꼭 되어있어야해), 로컬에선 작동안하지만 배포시엔 동작하는 것 확인했음
+        axios.patch('/api/quiz/update-rank', {  //맞춘 정답 전송(유저 쿠키 생성 꼭 되어있어야해), 로컬에선 작동안하지만 배포시엔 동작하는 것 확인했음
           score: ls[0].count
         },
           { withCredentials: true } //쿠키 전송 필수
