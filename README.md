@@ -23,7 +23,7 @@ To get a local copy up and running, follow these simple steps.
 ```bash
 git clone https://github.com/ZIGUquiz/ZIGUquiz-frontend.git
 ```
-cd your-react-project
+```cd your-react-project```
 
 ## Install dependencies
 ```npm install```
