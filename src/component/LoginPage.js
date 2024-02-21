@@ -44,7 +44,7 @@ const GoogleLoginButton = () => {
 };
 
 const LoginPage = () => {
-    const clientId = '756646843649-gg9n9b7fvtttk7pg6sd20mcriadmn2bp.apps.googleusercontent.com';
+    const clientId = '923824166987-d1j100h3osfbp5d7irhp7kqsooo7t6ta.apps.googleusercontent.com';
 
     return (
         <div className='startPageLayout'>
