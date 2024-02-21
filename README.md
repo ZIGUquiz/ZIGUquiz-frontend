@@ -1,7 +1,7 @@
 
 ![main (2)](https://github.com/ZIGUquiz/ZIGUquiz-frontend/assets/89975936/1129c0eb-c4dc-401c-a5f4-94de5cf531c5)
 
-Hi ! This is EarthQuiz's front-end repository. 
+Hi ! This is ZIGU quiz's front-end repository. 
 
 Please refer to the back-end repository to run it locally and run the server together
 
@@ -29,3 +29,5 @@ git clone https://github.com/ZIGUquiz/ZIGUquiz-frontend.git
 ```npm install```
 ## Start the development server
 ```npm start```
+
+The application will start and be accessible on http://localhost:3000.
