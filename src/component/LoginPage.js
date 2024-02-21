@@ -13,8 +13,7 @@ const GoogleLoginButton = () => {
     const signIn = useGoogleLogin({
         //로그인 성공
         onSuccess: (res) => { 
-            axios.post('http://35.208.142.216:8080/auth/login', {
-            // axios.post('http://localhost:8080/auth/login', {
+            axios.post('http://localhost:8080/auth/login', {
                 access_token: res.access_token,
                 scope: res.scope
             })
@@ -46,7 +45,7 @@ const GoogleLoginButton = () => {
 };
 
 const LoginPage = () => {
-    const clientId = '756646843649-gg9n9b7fvtttk7pg6sd20mcriadmn2bp.apps.googleusercontent.com';
+    const clientId = '923824166987-d1j100h3osfbp5d7irhp7kqsooo7t6ta.apps.googleusercontent.com';
 
     return (
         <div className='startPageLayout'>
